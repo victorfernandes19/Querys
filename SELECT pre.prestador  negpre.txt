@@ -1,0 +1,23 @@
+SELECT 
+
+pre.DS_UF,
+pre.CD_PRESTADOR,
+pre.NO_PRESTADOR,
+pre.NU_CPFCNPJ,
+negpre.TERMO,
+negpre.DS_TERMO,
+negpre.CLASS_TERMO,
+negpre.CLASSE_ITEM
+--PREC.DT_INICIAL
+
+
+FROM gold.apcm_deacm_contasmedicas.tb_contas_medicas_prestador pre
+join gold.cmmrp_den_negociacaoprestadores.tb_neg_preco_reajuste negpre on pre.CD_PRESTADOR = negpre.CD_PRESTADOR 
+--left join gold.cmmrp_den_negociacaoprestadores.tb_neg_prestador_preco PREC ON prec.CD_PRESTADOR = negpre.CD_PRESTADOR
+
+where negpre.CD_PRESTADOR = '485608'
+
+limit 20
+
+
+

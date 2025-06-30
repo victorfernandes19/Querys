@@ -25,3 +25,5 @@ criar uma forma de acompanhar e tratar as pendencias da rede dor
 mapear inconsistências e tratativas 
 
 teste para commit 30/06/2025
+
+teste para commit 30/06/2025. 2
